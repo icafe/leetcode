@@ -3,11 +3,9 @@ import java.util.List;
 
 
 /**
- *
  * this is solution of Pascal's Triangle
- *
+ * <p/>
  * https://oj.leetcode.com/problems/pascals-triangle/
- *
  */
 public class PascalTriangle {
 
