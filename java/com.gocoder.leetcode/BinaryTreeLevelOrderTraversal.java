@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.TreeMap;
 
 /**
- * this is solution of Binary Tree Level Order Traversal II
+ * this is solution of Binary Tree Level Order Traversal
  * <p/>
  * https://oj.leetcode.com/problems/binary-tree-level-order-traversal/
  */
