@@ -2,6 +2,7 @@ package com.gocoder.leetcode;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Optional;
 
 /**
  * 两数之和
@@ -15,6 +16,7 @@ public class L0001 {
     public int[] twoSum(int[] nums, int target) {
         int len = nums.length;
         HashMap<Integer, Integer> map = new HashMap<>(len);
+
         for (int i = 0; i < len; ++i) {
             if (map.containsKey(nums[i])) {
                 return new int[]{map.get(nums[i]), i};
@@ -28,6 +30,10 @@ public class L0001 {
         L0001 solution = new L0001();
         int[] nums = new int[]{2, 7, 11, 15};
         int target = 9;
-        System.out.println(Arrays.toString(solution.twoSum(nums, target)));
+        System.out.println(
+                Arrays.toString(
+                        Optional.ofNullable(solution.twoSum(nums, target)).orElse(new int[2])
+                )
+        );
     }
 }
