@@ -60,7 +60,7 @@ public class L0002 {
             System.out.println("null");
             return;
         }
-        StringBuilder sb = new StringBuilder("[" ).append(node.val);
+        StringBuilder sb = new StringBuilder("[").append(node.val);
         ListNode p = node.next;
         while (p != null) {
             sb.append(",").append(p.val);
